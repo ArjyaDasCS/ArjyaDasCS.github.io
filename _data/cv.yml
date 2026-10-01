@@ -1,0 +1,64 @@
+cv:
+  name: Arjya Das
+  label: PhD Student, Computer Science
+  email: arjdas@ucdavis.edu
+  location: Davis, CA
+  website: https://arjyadas.github.io
+  summary: PhD student working at the intersection of programming languages and high-performance computing.
+
+  social_networks:
+    - network: GitHub
+      username: arjyadas
+
+  sections:
+    Education:
+      - institution: University of California, Davis
+        location: Davis, CA
+        url: https://www.cs.ucdavis.edu/
+        area: Computer Science
+        studyType: PhD
+        # start_date: YYYY  # add your start year
+        highlights:
+          - "Research: programming languages and high-performance computing"
+
+    Experience:
+      - company: Lawrence Livermore National Laboratory
+        position: Graduate Computing Intern
+        location: Livermore, CA
+        start_date: 2026-06
+        end_date: 2026-09
+        summary: HPC simulation work using C, C++, Python, PyTorch, ONNX, OpenMP, and CUDA.
+
+      - company: University of California, Davis
+        position: Teaching Assistant, ECS 140A (Programming Languages)
+        location: Davis, CA
+        start_date: 2026-03
+        end_date: 2026-06
+        highlights:
+          - Built batch autograding pipelines for Go, SWI-Prolog, and Common Lisp submissions
+          - Developed homework assignments, including a Prolog term parser in Go and a MiniLisp interpreter
+          - Ran interactive grading sessions across five homework assignments
+
+    Research:
+      - bullet: "**AutoNeurify:** neural surrogates for accelerating scientific simulations, evaluated on ten HPC benchmarks (paper in preparation)"
+      - bullet: "**Floating-point branch instability:** empirical comparison of EFTSanitizer and FPChecker on the NAS Parallel Benchmarks; fp32 branch-flip microbenchmark suites"
+
+    Service:
+      - bullet: "Artifact Evaluation Committee, **ASE 2026**"
+      - bullet: "Artifact Evaluation Committee, **ISSTA 2026**"
+
+    Skills:
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords: "C, C++, Python, Go, Prolog, Common Lisp"
+      - name: HPC & ML
+        icon: fa-solid fa-microchip
+        keywords: "OpenMP, CUDA, PyTorch, ONNX"
+      - name: Tools
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "LaTeX, Docker"
+
+    Interests:
+      - name: Research interests
+        icon: fa-solid fa-tag
+        keywords: "Programming languages, HPC, floating-point reliability, program analysis, neural surrogates, parsing theory"

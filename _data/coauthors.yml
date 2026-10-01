@@ -1,0 +1,5 @@
+# Link co-author names in publications to their homepages. Key = lowercase last name. Example:
+# "smith":
+#   - firstname: ["Jane", "J."]
+#     url: https://example.edu/~jsmith
+{}
