@@ -37,6 +37,13 @@ Bengaluru, advised by [Dr. Deepak D'Souza](https://www.csa.iisc.ac.in/~deepakd/)
 High-Performance Computing and Compiler Optimizations
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400&display=swap");
+  .post-header .post-title::after {
+    content: " (আর্য্য দাস)";
+    font-family: "Noto Sans Bengali", sans-serif;
+    font-weight: 400;
+    font-size: 0.75em;
+  }
   .profile .more-info p { display: block; }
   @media (min-width: 768px) {
     .post .profile { margin-top: -6rem; }
