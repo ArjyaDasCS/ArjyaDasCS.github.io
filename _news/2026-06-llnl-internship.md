@@ -1,8 +1,0 @@
----
-layout: post
-date: 2026-06-15 09:00:00-0700
-inline: true
-related_posts: false
----
-
-Started a Graduate Computing Internship at **Lawrence Livermore National Laboratory**, adding branch-flip detection to [FPChecker](https://github.com/LLNL/FPChecker).

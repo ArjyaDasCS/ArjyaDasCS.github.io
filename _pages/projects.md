@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /projects/
-description: Formal methods, machine learning for systems, and high-performance computing.
+description: Formal Methods, Machine Learning for Systems, and High-Performance Computing.
 nav: true
 nav_order: 1
 display_categories: [current]
