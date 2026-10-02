@@ -35,3 +35,9 @@ Bengaluru, advised by [Dr. Deepak D'Souza](https://www.csa.iisc.ac.in/~deepakd/)
 
 **Research Interests:** Formal Methods, Machine Learning (Generative AI) for Systems and Software Engineering,
 High-Performance Computing and Compiler Optimizations
+
+<style>
+  @media (min-width: 768px) {
+    .post .profile { margin-top: -6rem; }
+  }
+</style>
