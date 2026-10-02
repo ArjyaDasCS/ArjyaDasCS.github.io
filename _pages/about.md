@@ -37,7 +37,10 @@ Bengaluru, advised by [Dr. Deepak D'Souza](https://www.csa.iisc.ac.in/~deepakd/)
 High-Performance Computing and Compiler Optimizations
 
 <style>
+  .profile .more-info p { display: block; }
   @media (min-width: 768px) {
     .post .profile { margin-top: -6rem; }
+    .profile .more-info { font-size: clamp(0.7rem, 1.5vw, 0.85rem); }
+    .profile .more-info p { white-space: nowrap; }
   }
 </style>
