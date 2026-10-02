@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started a Graduate Computing Internship at **Lawrence Livermore National Laboratory**, working on HPC simulation.
+Started a Graduate Computing Internship at **Lawrence Livermore National Laboratory**, adding branch-flip detection to [FPChecker](https://github.com/LLNL/FPChecker).

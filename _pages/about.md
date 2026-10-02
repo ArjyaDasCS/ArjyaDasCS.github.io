@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student, Computer Science · <a href='https://www.ucdavis.edu/'>University of California, Davis</a>
+subtitle: Ph.D. Student, Computer Science · <a href='https://www.ucdavis.edu/'>University of California, Davis</a>
 
 profile:
   align: right
@@ -25,19 +25,23 @@ latest_posts:
   enabled: false
 ---
 
-I'm a third-year PhD student in Computer Science at **UC Davis**. My research sits at the intersection of
-**programming languages** and **high-performance computing**: I build tools and techniques that make scientific
-software faster and more numerically trustworthy.
+I'm a Ph.D. student in Computer Science at **UC Davis**, advised by [Dr. Aditya V. Thakur](https://thakur.cs.ucdavis.edu/).
+I work at the intersection of **formal methods**, **machine learning for systems**, and **high-performance computing**:
+I build program-analysis and compiler tools that make scientific software faster and its numerics trustworthy.
 
-I've been affiliated with **Lawrence Livermore National Laboratory (LLNL)** for several years, most recently as a
-Graduate Computing Intern (summer 2026) working on HPC simulation.
+My research is supported by the U.S. Department of Energy and NSF. In summer 2026 I was a Graduate Computing Intern at
+**Lawrence Livermore National Laboratory (LLNL)**, where I added branch-flip detection to the floating-point analysis
+tool [FPChecker](https://github.com/LLNL/FPChecker).
+
+Before UC Davis, I earned an M.Tech. in Computer Science and Engineering from the **Indian Institute of Science (IISc)**,
+Bengaluru, advised by [Dr. Deepak D'Souza](https://www.csa.iisc.ac.in/~deepakd/), and a B.E. in Information Technology from
+**Jadavpur University**, Kolkata, where I received the University Gold Medal.
 
 **Current work**
 
-- **Neural surrogates for scientific simulation.** [AutoNeurify]({{ '/projects/autoneurify/' | relative_url }}) replaces
-  expensive regions of HPC applications with learned surrogates to speed them up.
-- **Floating-point reliability.** I study how [rounding error flips control flow]({{ '/projects/fp-branch-instability/' | relative_url }})
-  in scientific codes, and how well current error-detection tools catch it.
+- [Code-aware neural surrogates]({{ '/projects/neural-surrogates/' | relative_url }}) that accelerate performance-critical kernels in HPC codes.
+- [Whole-program floating-point error tracking]({{ '/projects/fp-shadow-execution/' | relative_url }}) for optimized, multi-module, and MPI applications.
+- [Formal verification of density functional approximations]({{ '/projects/dfa-verification/' | relative_url }}) against their exact physical conditions.
 
-**Interests:** numerical reliability · HPC proxy applications (LULESH, miniWeather) · program analysis ·
-logic and functional languages (Prolog, Common Lisp) · Go concurrency · parsing theory.
+**Research interests:** formal methods · machine learning (generative AI) for systems and software engineering ·
+high-performance computing and compiler optimizations.

@@ -2,9 +2,10 @@
 layout: page
 title: research
 permalink: /projects/
-description: Current research projects at the intersection of programming languages and HPC.
+description: Formal methods, machine learning for systems, and high-performance computing.
 nav: true
 nav_order: 1
+display_categories: [current]
 horizontal: true
 ---
 
@@ -62,3 +63,26 @@ horizontal: true
   {% endif %}
 {% endif %}
 </div>
+
+<a id="earlier" href=".#earlier">
+  <h2 class="category">earlier projects</h2>
+</a>
+
+- **Dataflow Analysis of Event-Driven Programs.** A static-analysis technique for event-driven programs such as Android
+  apps: model them as multi-threaded programs, build Control-Vector Flow Graphs (CVFGs), and apply Sync-CFG–based
+  points-to and null-dereference analysis. Implemented in the tool StAnDroid
+  ([paper](https://drive.google.com/file/d/1gy6U1mZL9ewavx59bM0wzga6VNDHZuO4/view?usp=sharing)).
+  <br><small>Java, Soot, Android Studio</small>
+- **Per-Process System-Call Sandbox.** A Linux kernel security module plus a static-analysis pipeline that extracts
+  system-call graphs as NFAs, combines function-level graphs into one control automaton, and enforces fine-grained
+  per-process system-call policies at runtime.
+  <br><small>C, Python, angr, NetworkX</small>
+- **Face Recognition from Limited Data.** A manifold-matching approach to face recognition that learns from few samples.
+  <br><small>Python, NumPy, OpenCV</small>
+- **Overlapping Communities in the DBLP Citation Network.** Detected overlapping and hierarchical research communities
+  with the BIGCLAM model, ranked influential papers within communities, and evaluated scalability on the full dataset.
+  <br><small>Python, NetworkX, NumPy</small>
+- **COVID-19 India Dashboard** (IIT Guwahati, with Duke-NUS Medical School). An R-based
+  [interactive web app](https://palash.shinyapps.io/IITG_COVID-19-India/) for state-wise COVID-19 prediction and data
+  visualization, recognized by India's Ministry of Education.
+  <br><small>R, Shiny</small>

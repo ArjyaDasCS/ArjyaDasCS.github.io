@@ -9,11 +9,11 @@ last_name: Das
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Arjya Das — CS PhD student at UC Davis working at the intersection of programming languages and high-performance computing.
+  Arjya Das — Ph.D. student in Computer Science at UC Davis working on formal methods, machine learning for systems, and high-performance computing.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: programming languages, high-performance computing, floating point, neural surrogates, scientific computing, UC Davis, LLNL # add your own keywords or leave empty
+keywords: formal methods, program analysis, high-performance computing, compilers, LLVM, floating point, neural surrogates, UC Davis
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: λ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

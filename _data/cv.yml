@@ -1,64 +1,133 @@
 cv:
   name: Arjya Das
-  label: PhD Student, Computer Science
+  label: Ph.D. Student, Computer Science, UC Davis
   email: arjdas@ucdavis.edu
   location: Davis, CA
   website: https://arjyadas.github.io
-  summary: PhD student working at the intersection of programming languages and high-performance computing.
+  summary: Ph.D. student working on formal methods, machine learning for systems, and high-performance computing.
 
   social_networks:
     - network: GitHub
-      username: arjyadas
+      username: ArjyaDasCS
 
   sections:
     Education:
       - institution: University of California, Davis
-        location: Davis, CA
+        location: Davis, CA, USA
         url: https://www.cs.ucdavis.edu/
         area: Computer Science
-        studyType: PhD
-        # start_date: YYYY  # add your start year
+        studyType: Ph.D.
+        start_date: 2023-09
         highlights:
-          - "Research: programming languages and high-performance computing"
+          - "Advisor: [Dr. Aditya V. Thakur](https://thakur.cs.ucdavis.edu/)"
+          - "GPA: 4.0/4.0"
+
+      - institution: Indian Institute of Science (IISc)
+        location: Bengaluru, India
+        area: Computer Science and Engineering
+        studyType: M.Tech.
+        start_date: 2021-08
+        end_date: 2023-07
+        highlights:
+          - "Advisor: [Dr. Deepak D'Souza](https://www.csa.iisc.ac.in/~deepakd/)"
+          - "GPA: 8.0/10"
+
+      - institution: Jadavpur University
+        location: Kolkata, India
+        area: Information Technology
+        studyType: B.E.
+        start_date: 2017-07
+        end_date: 2021-06
+        highlights:
+          - "GPA: 9.74/10; University Gold Medal"
 
     Experience:
-      - company: Lawrence Livermore National Laboratory
+      - company: Lawrence Livermore National Laboratory (LLNL)
         position: Graduate Computing Intern
         location: Livermore, CA
         start_date: 2026-06
         end_date: 2026-09
-        summary: HPC simulation work using C, C++, Python, PyTorch, ONNX, OpenMP, and CUDA.
+        summary: Implemented a new branch-flip detection feature in [FPChecker](https://github.com/LLNL/FPChecker) by extending its LLVM instrumentation and runtime to identify floating-point branch conditions that may become unstable due to accumulated numerical error.
 
       - company: University of California, Davis
-        position: Teaching Assistant, ECS 140A (Programming Languages)
+        position: Teaching Assistant, ECS 140A Programming Languages (undergraduate)
         location: Davis, CA
-        start_date: 2026-03
-        end_date: 2026-06
-        highlights:
-          - Built batch autograding pipelines for Go, SWI-Prolog, and Common Lisp submissions
-          - Developed homework assignments, including a Prolog term parser in Go and a MiniLisp interpreter
-          - Ran interactive grading sessions across five homework assignments
+        start_date: 2024-01
+        end_date: 2025-03
+        summary: Winter quarters 2024 and 2025.
 
-    Research:
-      - bullet: "**AutoNeurify:** neural surrogates for accelerating scientific simulations, evaluated on ten HPC benchmarks (paper in preparation)"
-      - bullet: "**Floating-point branch instability:** empirical comparison of EFTSanitizer and FPChecker on the NAS Parallel Benchmarks; fp32 branch-flip microbenchmark suites"
+      - company: Indian Institute of Science (IISc)
+        position: Teaching Assistant, E0 227 Program Analysis and Verification (graduate)
+        location: Bengaluru, India
+        start_date: 2022-08
+        end_date: 2022-12
+        summary: Fall semester 2022.
+
+      - company: Indian Institute of Technology (IIT) Guwahati
+        position: Summer Intern (Data Science), joint work with Duke-NUS Medical School, Singapore
+        location: Guwahati, India
+        start_date: 2020-05
+        end_date: 2020-07
+        highlights:
+          - Developed an R-based [interactive web app](https://palash.shinyapps.io/IITG_COVID-19-India/) for state-wise COVID-19 prediction and data visualization
+          - Designed statistical pipelines and dashboards; collaborated with researchers on model validation
+          - The app received public recognition from India's Ministry of Education
+
+    Publications:
+      - title: Covid-19 Face Mask Detection Using TensorFlow, Keras and OpenCV
+        authors:
+          - A. Das
+          - M. Wasif Ansari
+          - R. Basak
+        publisher: 2020 IEEE 17th India Council International Conference (INDICON), New Delhi, India
+        releaseDate: 2020
+        url: https://doi.org/10.1109/INDICON49873.2020.9342585
+        summary: 224 citations as of August 2026.
+
+    Research Projects:
+      - bullet: "**Code-aware Neural Surrogates for HPC Applications.** ML combined with program analysis and compiler optimizations to accelerate performance-critical kernels in large-scale HPC codes. Supported by the U.S. DOE. To be submitted to IPDPS '27."
+      - bullet: "**Scaling Floating-Point Error Tracking with Whole-Program Shadow Execution.** LLVM instrumentation and higher-precision shadow execution for optimized HPC applications, including multi-module and MPI workloads. To be submitted to CGO '27."
+      - bullet: "**Verifying Exact Conditions for Implementations of Density Functional Approximations.** Automated formal verification that proves simulation code satisfies its physical constraints or produces concrete counterexamples. Supported by the U.S. DOE and NSF. To be submitted to CAV '27."
+
+    Honors and Awards:
+      - title: University Gold Medal
+        date: 2021
+        awarder: Jadavpur University
+        summary: Top academic rank in B.E. Information Technology.
+
+      - title: National Merit-Based Graduate Scholarship
+        date: 2021
+        awarder: Government of India
+        summary: Highly competitive scholarship for graduate study, 2021–2023.
 
     Service:
-      - bullet: "Artifact Evaluation Committee, **ASE 2026**"
-      - bullet: "Artifact Evaluation Committee, **ISSTA 2026**"
+      - bullet: "Artifact Evaluation Committee member, **ISSTA 2026** and **ASE 2026**"
+
+    Mentoring and Talks:
+      - bullet: "Mentored two undergraduate students in research and career development: Keena Vaslioff (now a graduate student at UC Davis) and Aditya Seth (now a Software Engineer at Chevron)"
+      - bullet: "Delivered 4 technical seminar presentations on research papers in neuro-symbolic learning and program analysis"
 
     Skills:
       - name: Languages
         icon: fa-solid fa-code
-        keywords: "C, C++, Python, Go, Prolog, Common Lisp"
-      - name: HPC & ML
+        keywords: "C, C++, Python, Fortran, Java, R, MATLAB"
+      - name: HPC & Parallelism
         icon: fa-solid fa-microchip
-        keywords: "OpenMP, CUDA, PyTorch, ONNX"
-      - name: Tools
+        keywords: "MPI, OpenMP, CUDA, cuDNN, cuBLAS"
+      - name: Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, TensorFlow, scikit-learn, NumPy, OpenCV, ONNX, TensorRT"
+      - name: Formal Methods & Program Analysis
+        icon: fa-solid fa-check-double
+        keywords: "LLVM/Clang, ROSE, LFortran, Soot, angr, Alloy, Spin, Rodin, VCC, JPF, AFL, KLEE, Z3, Frama-C, TVM, Gurobi, Infer, dReal, Daikon, DIG, Wolfram"
+      - name: Databases
+        icon: fa-solid fa-database
+        keywords: "MySQL, Oracle 10g, HDF5"
+      - name: Software & Web
         icon: fa-solid fa-screwdriver-wrench
-        keywords: "LaTeX, Docker"
+        keywords: "HTML, JavaScript, CSS, AJAX, XML, LaTeX, MOEA Framework, Android Studio"
 
     Interests:
       - name: Research interests
         icon: fa-solid fa-tag
-        keywords: "Programming languages, HPC, floating-point reliability, program analysis, neural surrogates, parsing theory"
+        keywords: "Formal methods; machine learning (generative AI) for systems and software engineering; high-performance computing and compiler optimizations"
