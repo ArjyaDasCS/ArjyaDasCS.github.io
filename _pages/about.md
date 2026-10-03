@@ -50,4 +50,6 @@ High-Performance Computing and Compiler Optimizations
     .profile .more-info { font-size: clamp(0.7rem, 1.5vw, 0.85rem); }
     .profile .more-info p { white-space: nowrap; }
   }
+  .social .contact-icons { font-size: 2.5rem; }
+  .social .contact-icons a img { width: 2rem; height: 2rem; }
 </style>
