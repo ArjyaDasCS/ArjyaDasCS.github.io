@@ -5,84 +5,38 @@ permalink: /projects/
 description: Formal Methods, Machine Learning for Systems, and High-Performance Computing.
 nav: true
 nav_order: 1
-display_categories: [current]
-horizontal: true
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+<div class="rp">
+  <article class="rp-item">
+    <a class="rp-img" href="{{ '/projects/neural-surrogates/' | relative_url }}"><img src="{{ '/assets/img/projects/neural-surrogates.jpg' | relative_url }}" alt="Simulation grid mapped to a neural network"></a>
+    <div>
+      <h3><a href="{{ '/projects/neural-surrogates/' | relative_url }}">Code-aware Neural Surrogates for HPC Applications</a></h3>
+      <p>Combines machine learning with program analysis and compiler optimizations to accelerate performance-critical kernels in large-scale HPC codes.</p>
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+  </article>
+  <article class="rp-item">
+    <a class="rp-img" href="{{ '/projects/fp-shadow-execution/' | relative_url }}"><img src="{{ '/assets/img/projects/fp-shadow-execution.jpg' | relative_url }}" alt="Floating-point traces drifting from their higher-precision shadows"></a>
+    <div>
+      <h3><a href="{{ '/projects/fp-shadow-execution/' | relative_url }}">Scaling Floating-Point Error Tracking with Whole-Program Shadow Execution</a></h3>
+      <p>Tracks floating-point error across optimized HPC applications using LLVM instrumentation and higher-precision shadow execution, including multi-module and MPI workloads.</p>
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+  </article>
+  <article class="rp-item">
+    <a class="rp-img" href="{{ '/projects/dfa-verification/' | relative_url }}"><img src="{{ '/assets/img/projects/dfa-verification.jpg' | relative_url }}" alt="A curve crossing a physical bound, with the counterexample marked"></a>
+    <div>
+      <h3><a href="{{ '/projects/dfa-verification/' | relative_url }}">Verifying Exact Conditions for Implementations of Density Functional Approximations</a></h3>
+      <p>An automated formal verification pipeline that proves simulation code satisfies its required physical constraints, or produces concrete counterexamples where it does not.</p>
+    </div>
+  </article>
 </div>
 
-<a id="earlier" href=".#earlier">
-  <h2 class="category">earlier projects</h2>
-</a>
-
-- **Dataflow Analysis of Event-Driven Programs.** A static-analysis technique for event-driven programs such as Android
-  apps: model them as multi-threaded programs, build Control-Vector Flow Graphs (CVFGs), and apply Sync-CFG–based
-  points-to and null-dereference analysis. Implemented in the tool StAnDroid
-  ([paper](https://drive.google.com/file/d/1gy6U1mZL9ewavx59bM0wzga6VNDHZuO4/view?usp=sharing)).
-  <br><small>Java, Soot, Android Studio</small>
-- **Per-Process System-Call Sandbox.** A Linux kernel security module plus a static-analysis pipeline that extracts
-  system-call graphs as NFAs, combines function-level graphs into one control automaton, and enforces fine-grained
-  per-process system-call policies at runtime.
-  <br><small>C, Python, angr, NetworkX</small>
-- **Face Recognition from Limited Data.** A manifold-matching approach to face recognition that learns from few samples.
-  <br><small>Python, NumPy, OpenCV</small>
-- **Overlapping Communities in the DBLP Citation Network.** Detected overlapping and hierarchical research communities
-  with the BIGCLAM model, ranked influential papers within communities, and evaluated scalability on the full dataset.
-  <br><small>Python, NetworkX, NumPy</small>
-- **COVID-19 India Dashboard** (IIT Guwahati, with Duke-NUS Medical School). An R-based
-  [interactive web app](https://palash.shinyapps.io/IITG_COVID-19-India/) for state-wise COVID-19 prediction and data
-  visualization, recognized by India's Ministry of Education.
-  <br><small>R, Shiny</small>
+<style>
+  .rp { display: grid; gap: 1.75rem; margin-top: 0.5rem; }
+  .rp .rp-item { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1.25rem; align-items: center; }
+  .rp .rp-img img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 0.4rem; border: 1px solid var(--global-divider-color); }
+  .rp h3 { font-size: 1.15rem; font-weight: 500; line-height: 1.35; margin: 0 0 0.4rem; }
+  .rp h3 a { color: var(--global-theme-color); }
+  .rp p { margin: 0; color: var(--global-text-color); }
+  @media (max-width: 575px) { .rp .rp-item { grid-template-columns: 6rem minmax(0, 1fr); gap: 0.9rem; align-items: start; } }
+</style>

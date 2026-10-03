@@ -2,7 +2,6 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Teaching assistantships at UC Davis and IISc.
 nav: true
 nav_order: 3
 ---
@@ -39,12 +38,8 @@ nav_order: 3
 
 <style>
   .tg { --tg-accent: var(--global-theme-color); --tg-tint: color-mix(in srgb, var(--global-theme-color) 12%, transparent); }
-  .tg .tg-h {
-    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--global-text-color-light); margin: 2rem 0 1rem; padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--global-divider-color);
-  }
-  .tg .tg-h:first-child { margin-top: 0.5rem; }
+  .tg .tg-h { margin: 2rem 0 1rem; }
+  .tg .tg-h:first-child { margin-top: 1rem; }
   .tg .tg-courses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .tg .tg-card {
     background: var(--global-card-bg-color); border: 1px solid var(--global-divider-color);
