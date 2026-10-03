@@ -52,4 +52,5 @@ High-Performance Computing and Compiler Optimizations
   }
   .social .contact-icons { font-size: 2.5rem; }
   .social .contact-icons a img { width: 2rem; height: 2rem; }
+  .profile .more-info { font-family: inherit; }
 </style>

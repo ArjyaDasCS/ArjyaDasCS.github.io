@@ -31,24 +31,10 @@ nav_order: 3
   </div>
 
   <h2 class="tg-h">Mentoring</h2>
-  <div class="tg-people">
-    <article class="tg-card tg-person">
-      <span class="tg-avatar" aria-hidden="true">KV</span>
-      <div>
-        <h3>Keena Vaslioff</h3>
-        <p class="tg-meta">B.S. student (2024–2025)</p>
-        <p class="tg-now">Now a graduate student at UC Davis</p>
-      </div>
-    </article>
-    <article class="tg-card tg-person">
-      <span class="tg-avatar" aria-hidden="true">AS</span>
-      <div>
-        <h3>Aditya Seth</h3>
-        <p class="tg-meta">B.S. student (2024–2025)</p>
-        <p class="tg-now">Now a Software Engineer at Chevron</p>
-      </div>
-    </article>
-  </div>
+  <ul class="tg-list">
+    <li><strong>Keena Vaslioff</strong> (B.S. student, 2024–2025), now a graduate student at UC Davis</li>
+    <li><strong>Aditya Seth</strong> (B.S. student, 2024–2025), now a Software Engineer at Chevron</li>
+  </ul>
 </div>
 
 <style>
@@ -60,14 +46,13 @@ nav_order: 3
   }
   .tg .tg-h:first-child { margin-top: 0.5rem; }
   .tg .tg-courses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-  .tg .tg-people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .tg .tg-card {
     background: var(--global-card-bg-color); border: 1px solid var(--global-divider-color);
     border-top: 3px solid var(--tg-accent); border-radius: 0.5rem; padding: 1.1rem 1.2rem;
     display: flex; flex-direction: column; min-width: 0;
   }
   .tg .tg-code {
-    align-self: flex-start; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem;
+    align-self: flex-start; font-size: 0.85rem;
     font-weight: 600; color: var(--tg-accent); background: var(--tg-tint); border-radius: 0.3rem; padding: 0.15rem 0.5rem;
   }
   .tg h3 { font-size: 1.1rem; font-weight: 500; line-height: 1.3; margin: 0.7rem 0 0.35rem; color: var(--global-text-color); }
@@ -77,14 +62,7 @@ nav_order: 3
     font-size: 0.8rem; color: var(--global-text-color); border: 1px solid var(--global-divider-color);
     border-radius: 999px; padding: 0.1rem 0.6rem; white-space: nowrap;
   }
-  .tg .tg-person { flex-direction: row; align-items: center; gap: 1rem; }
-  .tg .tg-person h3 { margin-top: 0; }
-  .tg .tg-person .tg-meta { margin-bottom: 0.25rem; }
-  .tg .tg-avatar {
-    flex: none; width: 3rem; height: 3rem; border-radius: 50%; display: grid; place-items: center;
-    font-weight: 600; color: var(--tg-accent); background: var(--tg-tint);
-  }
-  .tg .tg-now { font-size: 0.9rem; margin: 0; color: var(--global-text-color); }
+  .tg .tg-list { padding-left: 1.2rem; margin: 0; }
+  .tg .tg-list li { margin-bottom: 0.4rem; }
   @media (max-width: 767px) { .tg .tg-courses { grid-template-columns: minmax(0, 1fr); } }
-  @media (max-width: 575px) { .tg .tg-people { grid-template-columns: minmax(0, 1fr); } }
 </style>
