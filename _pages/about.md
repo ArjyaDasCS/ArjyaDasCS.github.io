@@ -31,7 +31,7 @@ I use program analysis, compiler techniques, and machine learning to make scient
 
 Before UC Davis, I earned an M.Tech. in Computer Science and Engineering from the **Indian Institute of Science (IISc)**,
 Bengaluru, advised by [Dr. Deepak D'Souza](https://www.csa.iisc.ac.in/~deepakd/), and a B.E. in Information Technology from
-**Jadavpur University**, Kolkata, where I received the University Gold Medal.
+**Jadavpur University**, Kolkata.
 
 **Research Interests:** Formal Methods, Machine Learning (Generative AI) for Systems and Software Engineering,
 High-Performance Computing and Compiler Optimizations

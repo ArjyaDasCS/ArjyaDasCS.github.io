@@ -15,3 +15,8 @@ nav_order: 3
 ### Indian Institute of Science, Bengaluru
 
 - **E0 227: Program Analysis and Verification** (Fall 2022)
+
+### Mentoring
+
+- **Keena Vaslioff** (B.S. student), now a graduate student at UC Davis
+- **Aditya Seth** (B.S. student), now a Software Engineer at Chevron
