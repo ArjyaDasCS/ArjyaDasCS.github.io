@@ -7,16 +7,84 @@ nav: true
 nav_order: 3
 ---
 
-### University of California, Davis
+<div class="tg">
+  <h2 class="tg-h">Teaching Assistant</h2>
+  <div class="tg-courses">
+    <article class="tg-card">
+      <span class="tg-code">ECS 140A</span>
+      <h3>Programming Languages</h3>
+      <p class="tg-meta">UC Davis<br>Undergraduate</p>
+      <div class="tg-terms"><span>Winter 2024</span><span>Winter 2025</span><span>Spring 2026</span></div>
+    </article>
+    <article class="tg-card">
+      <span class="tg-code">ECS 36A</span>
+      <h3>Programming and Problem Solving</h3>
+      <p class="tg-meta">UC Davis<br>Undergraduate</p>
+      <div class="tg-terms"><span>Winter 2026</span></div>
+    </article>
+    <article class="tg-card">
+      <span class="tg-code">E0 227</span>
+      <h3>Program Analysis and Verification</h3>
+      <p class="tg-meta">Indian Institute of Science, Bengaluru<br>Graduate</p>
+      <div class="tg-terms"><span>Fall 2022</span></div>
+    </article>
+  </div>
 
-- **ECS 36A: Programming and Problem Solving** (Winter 2026)
-- **ECS 140A: Programming Languages** (Winter 2024, Winter 2025, Spring 2026)
+  <h2 class="tg-h">Mentoring</h2>
+  <div class="tg-people">
+    <article class="tg-card tg-person">
+      <span class="tg-avatar" aria-hidden="true">KV</span>
+      <div>
+        <h3>Keena Vaslioff</h3>
+        <p class="tg-meta">B.S. student (2024–2025)</p>
+        <p class="tg-now">Now a graduate student at UC Davis</p>
+      </div>
+    </article>
+    <article class="tg-card tg-person">
+      <span class="tg-avatar" aria-hidden="true">AS</span>
+      <div>
+        <h3>Aditya Seth</h3>
+        <p class="tg-meta">B.S. student (2024–2025)</p>
+        <p class="tg-now">Now a Software Engineer at Chevron</p>
+      </div>
+    </article>
+  </div>
+</div>
 
-### Indian Institute of Science, Bengaluru
-
-- **E0 227: Program Analysis and Verification** (Fall 2022)
-
-### Mentoring
-
-- **Keena Vaslioff** (B.S. student), now a graduate student at UC Davis
-- **Aditya Seth** (B.S. student), now a Software Engineer at Chevron
+<style>
+  .tg { --tg-accent: var(--global-theme-color); --tg-tint: color-mix(in srgb, var(--global-theme-color) 12%, transparent); }
+  .tg .tg-h {
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--global-text-color-light); margin: 2rem 0 1rem; padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .tg .tg-h:first-child { margin-top: 0.5rem; }
+  .tg .tg-courses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .tg .tg-people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .tg .tg-card {
+    background: var(--global-card-bg-color); border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--tg-accent); border-radius: 0.5rem; padding: 1.1rem 1.2rem;
+    display: flex; flex-direction: column; min-width: 0;
+  }
+  .tg .tg-code {
+    align-self: flex-start; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem;
+    font-weight: 600; color: var(--tg-accent); background: var(--tg-tint); border-radius: 0.3rem; padding: 0.15rem 0.5rem;
+  }
+  .tg h3 { font-size: 1.1rem; font-weight: 500; line-height: 1.3; margin: 0.7rem 0 0.35rem; color: var(--global-text-color); }
+  .tg .tg-meta { font-size: 0.9rem; color: var(--global-text-color-light); margin: 0 0 1rem; line-height: 1.45; }
+  .tg .tg-terms { margin-top: auto; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tg .tg-terms span {
+    font-size: 0.8rem; color: var(--global-text-color); border: 1px solid var(--global-divider-color);
+    border-radius: 999px; padding: 0.1rem 0.6rem; white-space: nowrap;
+  }
+  .tg .tg-person { flex-direction: row; align-items: center; gap: 1rem; }
+  .tg .tg-person h3 { margin-top: 0; }
+  .tg .tg-person .tg-meta { margin-bottom: 0.25rem; }
+  .tg .tg-avatar {
+    flex: none; width: 3rem; height: 3rem; border-radius: 50%; display: grid; place-items: center;
+    font-weight: 600; color: var(--tg-accent); background: var(--tg-tint);
+  }
+  .tg .tg-now { font-size: 0.9rem; margin: 0; color: var(--global-text-color); }
+  @media (max-width: 767px) { .tg .tg-courses { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 575px) { .tg .tg-people { grid-template-columns: minmax(0, 1fr); } }
+</style>
