@@ -1,0 +1,26 @@
+---
+# Local override of al_folio_core 1.0.15 assets/css/main.scss: blue accent instead of purple.
+---
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }},
+  $purple-color: #0b5cad,
+  $cyan-color: #5ca8f0
+);
+
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
