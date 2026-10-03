@@ -8,7 +8,7 @@
 
 @use "variables" with (
   $max-content-width: {{ site.max_width | default: "930px" }},
-  $purple-color: #0b5cad,
+  $purple-color: #084c94,
   $cyan-color: #5ca8f0
 );
 
