@@ -50,11 +50,18 @@ cv:
         summary: Implemented a new branch-flip detection feature in [FPChecker](https://github.com/LLNL/FPChecker) by extending its LLVM instrumentation and runtime to identify floating-point branch conditions that may become unstable due to accumulated numerical error.
 
       - company: University of California, Davis
+        position: Teaching Assistant, ECS 36A Programming and Problem Solving (undergraduate)
+        location: Davis, CA
+        start_date: 2026-01
+        end_date: 2026-03
+        summary: Winter quarter 2026.
+
+      - company: University of California, Davis
         position: Teaching Assistant, ECS 140A Programming Languages (undergraduate)
         location: Davis, CA
         start_date: 2024-01
-        end_date: 2025-03
-        summary: Winter quarters 2024 and 2025.
+        end_date: 2026-06
+        summary: Winter 2024, Winter 2025, and Spring 2026.
 
       - company: Indian Institute of Science (IISc)
         position: Teaching Assistant, E0 227 Program Analysis and Verification (graduate)
